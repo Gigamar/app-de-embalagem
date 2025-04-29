@@ -5,7 +5,7 @@ body {
   background: #f2f2f2;
 }
 .container {
-  max-width: 500px;
+  max-width: 700px;
   margin: 40px auto;
   background: white;
   padding: 30px;
@@ -14,11 +14,11 @@ body {
   text-align: center;
 }
 .logo {
-  width: 120px;
+  width: 160px;
   margin-bottom: 20px;
 }
 input[type="text"], input[type="number"] {
-  width: 80%;
+  width: 60%;
   padding: 10px;
   margin: 10px 0;
   border-radius: 8px;

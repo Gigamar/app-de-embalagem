@@ -1,0 +1,1 @@
+function enviarPedido() { alert('Pedido enviado com sucesso!'); }

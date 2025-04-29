@@ -9,23 +9,30 @@
 </head>
 <body>
   <div class="container">
-    <h1>Pedido de Materiais</h1>
-    <div class="item-list">
-      <div class="item">
-        <span class="descricao">001 - Papel Toalha 2 Dobras 20cm x 200m</span>
-        <input type="number" placeholder="Qtd" min="0"/>
-      </div>
-      <div class="item">
-        <span class="descricao">002 - Sabão Líquido Neutro 5L</span>
-        <input type="number" placeholder="Qtd" min="0"/>
-      </div>
-      <div class="item">
-        <span class="descricao">003 - Desinfetante Floral 2L</span>
-        <input type="number" placeholder="Qtd" min="0"/>
-      </div>
+    <img src="logo_estancia.png" class="logo" alt="Logo Estância" />
+    <div id="login">
+      <h2>Login por Setor</h2>
+      <input type="text" id="setor" placeholder="Digite o nome do setor" />
+      <button onclick="validarSetor()">Entrar</button>
+      <p id="erro" class="erro"></p>
     </div>
-    <button onclick="enviarPedido()">Enviar Pedido</button>
-    <p id="mensagem" class="mensagem-sucesso"></p>
+    <div id="pedido" style="display:none;">
+      <h2>Pedido - <span id="setor-nome"></span></h2>
+      <div class="item">
+        <span>001 - Papel Toalha 2 Dobras 20cm x 200m</span>
+        <input type="number" placeholder="Qtd" min="0" />
+      </div>
+      <div class="item">
+        <span>002 - Sabão Líquido Neutro 5L</span>
+        <input type="number" placeholder="Qtd" min="0" />
+      </div>
+      <div class="item">
+        <span>003 - Desinfetante Floral 2L</span>
+        <input type="number" placeholder="Qtd" min="0" />
+      </div>
+      <button onclick="enviarPedido()">Enviar Pedido</button>
+      <p id="mensagem" class="mensagem-sucesso"></p>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

@@ -1,4 +1,4 @@
 
 function enviarPedido() {
-    document.getElementById('mensagem').innerText = 'Pedido enviado com sucesso!';
+  document.getElementById('mensagem').innerText = 'Pedido enviado com sucesso!';
 }

@@ -2,28 +2,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Pedido de Embalagens</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aplicativo de Embalagem</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Lista de Itens</h1>
-    <form onsubmit="event.preventDefault(); enviarPedido();">
-        <div class="item">
-            <span>001 - Papel Toalha 2 Dobras 20cm x 200m</span>
-            <input type="number" placeholder="Qtd" min="0">
-        </div>
-        <div class="item">
-            <span>002 - Sabão Líquido Neutro 5L</span>
-            <input type="number" placeholder="Qtd" min="0">
-        </div>
-        <div class="item">
-            <span>003 - Desinfetante Floral 2L</span>
-            <input type="number" placeholder="Qtd" min="0">
-        </div>
-        <button type="submit">Enviar Pedido</button>
-        <p id="mensagem"></p>
-    </form>
-    <script src="script.js"></script>
+  <div class="container">
+    <h1>Pedido de Materiais</h1>
+    <div class="item-list">
+      <div class="item">
+        <span class="descricao">001 - Papel Toalha 2 Dobras 20cm x 200m</span>
+        <input type="number" placeholder="Qtd" min="0"/>
+      </div>
+      <div class="item">
+        <span class="descricao">002 - Sabão Líquido Neutro 5L</span>
+        <input type="number" placeholder="Qtd" min="0"/>
+      </div>
+      <div class="item">
+        <span class="descricao">003 - Desinfetante Floral 2L</span>
+        <input type="number" placeholder="Qtd" min="0"/>
+      </div>
+    </div>
+    <button onclick="enviarPedido()">Enviar Pedido</button>
+    <p id="mensagem" class="mensagem-sucesso"></p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
